@@ -1,0 +1,13 @@
+---
+title: "About Stella Li"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## About
+
+Stella Li is an MS Candidate in the Biostatistics Department of Columbia University's Mailman School of Public Health. 
+
+She is originally from Wuhan, China, and is currently living in Jersey City. She loves hiking, movies, and books. Her favorite animal is frog.
