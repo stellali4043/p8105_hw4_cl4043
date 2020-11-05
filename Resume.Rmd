@@ -1,0 +1,70 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+# Stella Li
+
+## Education
+
+**Master of Public Health** - May 2022 (expected)  
+Columbia University Mailman School of Public Health  	
+MS in Biostatistics, Methods and Theory Track
+
+**Bachelor of Science** - May 2019 <br>
+Smith College<br>
+Majors: Mathematics, Statistical and Data Sciences
+
+## Experiences
+**Wisconsin Project on Nuclear Arms Control**  
+**Research Intern** 2019-10 - 2020-04 <br>   
+Used the BeautifulSoup and Scrapy Python Library to extract structured data from an online marketplace and compiled it into CSV file with ten variables, which improved the efficiency of the whole team <br>
+Visualized nuclear weapon proliferation networks using igraph and network package in R <br>
+Profiled the companies and individuals involved in proliferation-related transactions by conducting open sources research to counter the proliferation of nuclear weapons and their delivery systems 
+  
+  
+**Praava Healthcare **  
+**Data Analyst ** Jan. 2019 - May. 2020 <br>   
+Conducted data forensic work and helped improve the database system for a Bangladesh-based healthcare startup, Praava Healthcare, enabling the company to put to use this database in order to provide better healthcare service for its patients <br>
+Used PL/SQL to identify the Entity-Key Relationship in the database, which includes 336 tables, and in total 4894 columns; wrote dynamic procedures and functions to make the identifying process more efficient and accurate <br>
+Created 2 kinds of visualizations, including multiple ER diagrams and an interactive network graph, analyzed the metadata structure of the database; provided sustainable and accessible work for the client, including a final report with a handbook; wrote ethical reflection to ensure the process is ethical
+ 
+**President Trump's Tweets Popularity Analysis**  
+**"What are some factors that affect the popularity of President Trump’s tweets? "** Nov. 2018 - Dec. 2018 <br>  
+Fetched the real-time data from an online archive of President Trump's twitter post, including deleted posts; the data contained over 12,700 tweets, spanning over three years<br>
+Conducted sentiment analysis using the NRC lexicon from tidytext package, and confirmed that total instances of the 2 sentiments, negative and positive, had higher counts than most of the 6 emotions we looked at<br>
+Manipulated the existing parameters and created new ones; built predictive and classifying models to analyze President Trump's twitter posts to identify factors which could potentially determine the popularity of the president's twitter posts<br>
+Used models including KNN, LDA, and logistic regression, and found out the logistic regression producing an outcome with the highest prediction accuracy rate of 79%, with significant predictors being the source and “positive”, “negative”, “trust”, “fear”, “sadness”, “surprise”
+
+**Smith College Math Department**  
+**Research Assistant** Sep. 2018- May 2019 <br>  
+Researched on Persistent Homology under the supervision of Professor David Meyers; studied the topological properties of a data set: the structure of a representation of a finite ordered set to those partially ordered sets which arise from data while making more general choice of metrics; generated an exhaustive list of progressions of varieties of inter-leaving distance <br> 
+Presented our findings at the Joint Mathematics Meetings and Hudson River Undergraduate Mathematics Conference in 2019
+
+**Human Computation and Visualization Laboratory, Smith College**   
+**SURF Research Assistant for Professor Jordan Crouser** Summer 2018  <br>  
+Funded by Frederick M & Wilma Warburg Fund for a stipend of $4800 <br> 
+Managed 2 different projects simultaneously and coordinated with other teams efficiently<br> 
+Performed statistical and text analyses on Smith College Classrooms' space datasets, including facility conditions, survey results on students' and faculty members' ratings and comments, using Rstudio  Tidyverse package, Python pandas package <br> 
+Created a metric for evaluating campus space utilization; wrote and presented the learning space report to Smith College Office of Campus Sustainability and Planning, and made suggestions on potential improvements regarding room assignment  
+
+## Extracurricular Activities
+
+**Smith College Residence Life**  
+**Residency Social Event Coordinator**	Jan. 2016 - Jan. 2017 <br>
+Attended weekly house meetings to discuss incoming tasks; organized themed social events within limited budget; sent out surveys and analyzed feedback from the participants when making decisions
+
+**Smith College International Student Organization**  
+**Publicity Chair** Jan.2015 – Sep 2017 <br>
+Attended weekly board meetings representing over 500 international students; communicated with college administration about student body's concern; spearheaded social media marketing strategy promoting International Student Organization's events to the Smith College Community through posters, banners, and other Social Media tools
+
+## Skills
+Programming Languages: R, SQL, Python   Software: MS Office, RStudio, Matlab, Tableau, Git  <br>
+Business Skills: Statistical Analysis, Project Management, Technical Communication <br>
+Languages: English: Full professional proficiency; Chinese: Native; German: Elementary proficiency
+
+

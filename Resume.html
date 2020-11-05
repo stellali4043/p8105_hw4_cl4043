@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="dashboard.html">Dashboard</a>
+</li>
+<li>
+  <a href="mailto:cl4043@cumc.columbia.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/stellali4043/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<div id="stella-li" class="section level1">
+<h1>Stella Li</h1>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<p><strong>Master of Public Health</strong> - May 2022 (expected)<br />
+Columbia University Mailman School of Public Health<br />
+MS in Biostatistics, Methods and Theory Track</p>
+<p><strong>Bachelor of Science</strong> - May 2019 <br> Smith College<br> Majors: Mathematics, Statistical and Data Sciences</p>
+</div>
+<div id="experiences" class="section level2">
+<h2>Experiences</h2>
+<p><strong>Wisconsin Project on Nuclear Arms Control</strong><br />
+<strong>Research Intern</strong> 2019-10 - 2020-04 <br><br />
+Used the BeautifulSoup and Scrapy Python Library to extract structured data from an online marketplace and compiled it into CSV file with ten variables, which improved the efficiency of the whole team <br> Visualized nuclear weapon proliferation networks using igraph and network package in R <br> Profiled the companies and individuals involved in proliferation-related transactions by conducting open sources research to counter the proliferation of nuclear weapons and their delivery systems</p>
+<p><strong>Praava Healthcare </strong><br />
+<strong>Data Analyst </strong> Jan. 2019 - May. 2020 <br><br />
+Conducted data forensic work and helped improve the database system for a Bangladesh-based healthcare startup, Praava Healthcare, enabling the company to put to use this database in order to provide better healthcare service for its patients <br> Used PL/SQL to identify the Entity-Key Relationship in the database, which includes 336 tables, and in total 4894 columns; wrote dynamic procedures and functions to make the identifying process more efficient and accurate <br> Created 2 kinds of visualizations, including multiple ER diagrams and an interactive network graph, analyzed the metadata structure of the database; provided sustainable and accessible work for the client, including a final report with a handbook; wrote ethical reflection to ensure the process is ethical</p>
+<p><strong>President Trump’s Tweets Popularity Analysis</strong><br />
+<strong>“What are some factors that affect the popularity of President Trump’s tweets?”</strong> Nov. 2018 - Dec. 2018 <br><br />
+Fetched the real-time data from an online archive of President Trump’s twitter post, including deleted posts; the data contained over 12,700 tweets, spanning over three years<br> Conducted sentiment analysis using the NRC lexicon from tidytext package, and confirmed that total instances of the 2 sentiments, negative and positive, had higher counts than most of the 6 emotions we looked at<br> Manipulated the existing parameters and created new ones; built predictive and classifying models to analyze President Trump’s twitter posts to identify factors which could potentially determine the popularity of the president’s twitter posts<br> Used models including KNN, LDA, and logistic regression, and found out the logistic regression producing an outcome with the highest prediction accuracy rate of 79%, with significant predictors being the source and “positive”, “negative”, “trust”, “fear”, “sadness”, “surprise”</p>
+<p><strong>Smith College Math Department</strong><br />
+<strong>Research Assistant</strong> Sep. 2018- May 2019 <br><br />
+Researched on Persistent Homology under the supervision of Professor David Meyers; studied the topological properties of a data set: the structure of a representation of a finite ordered set to those partially ordered sets which arise from data while making more general choice of metrics; generated an exhaustive list of progressions of varieties of inter-leaving distance <br> Presented our findings at the Joint Mathematics Meetings and Hudson River Undergraduate Mathematics Conference in 2019</p>
+<p><strong>Human Computation and Visualization Laboratory, Smith College</strong><br />
+<strong>SURF Research Assistant for Professor Jordan Crouser</strong> Summer 2018 <br><br />
+Funded by Frederick M &amp; Wilma Warburg Fund for a stipend of $4800 <br> Managed 2 different projects simultaneously and coordinated with other teams efficiently<br> Performed statistical and text analyses on Smith College Classrooms’ space datasets, including facility conditions, survey results on students’ and faculty members’ ratings and comments, using Rstudio Tidyverse package, Python pandas package <br> Created a metric for evaluating campus space utilization; wrote and presented the learning space report to Smith College Office of Campus Sustainability and Planning, and made suggestions on potential improvements regarding room assignment</p>
+</div>
+<div id="extracurricular-activities" class="section level2">
+<h2>Extracurricular Activities</h2>
+<p><strong>Smith College Residence Life</strong><br />
+<strong>Residency Social Event Coordinator</strong> Jan. 2016 - Jan. 2017 <br> Attended weekly house meetings to discuss incoming tasks; organized themed social events within limited budget; sent out surveys and analyzed feedback from the participants when making decisions</p>
+<p><strong>Smith College International Student Organization</strong><br />
+<strong>Publicity Chair</strong> Jan.2015 – Sep 2017 <br> Attended weekly board meetings representing over 500 international students; communicated with college administration about student body’s concern; spearheaded social media marketing strategy promoting International Student Organization’s events to the Smith College Community through posters, banners, and other Social Media tools</p>
+</div>
+<div id="skills" class="section level2">
+<h2>Skills</h2>
+<p>Programming Languages: R, SQL, Python Software: MS Office, RStudio, Matlab, Tableau, Git <br> Business Skills: Statistical Analysis, Project Management, Technical Communication <br> Languages: English: Full professional proficiency; Chinese: Native; German: Elementary proficiency</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
