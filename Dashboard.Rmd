@@ -16,7 +16,10 @@ library(jsonlite)
 library(janitor)
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd7247b8ebdff74dc24d0d774f5b3694c286a728
 # Which type of cuisine has the highest count of "Critical"?
 
 ```{r message=FALSE, echo=FALSE}
@@ -37,7 +40,7 @@ rest_inspec %>%
   layout(xaxis = list(title = "NYC boros"), yaxis = list(title = "Score"))
 ```
 
-
+# NYC restaurants score trend by critical flag status
 ```{r message=FALSE, echo=FALSE}
 rest_inspec %>%
   group_by(critical_flag) %>%
