@@ -1,0 +1,58 @@
+---
+title: "Dashboard for HW 4"
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, message = FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(patchwork)
+library(httr)
+library(jsonlite)
+library(janitor)
+```
+
+
+
+### Explanation for heatmap
+
+Among regular instacart users (days since prior order<30 days), is number of days since last order related to size of the order?
+
+One could make a case that within 10 days, those that order after more days tend to order more items, but this small trend may just be driven by many people ordering around 7 days, resulting in a higher frequency of orders containing 5 items in the 7th day than on the 2nd day since ordering simply because there are more people ordering 7 days after their last order. A box plot of the first 10 days on the x axis would be my next investigative step here. I wanted to make a heatmap first because I thought of the variables as continuous. 
+
+
+
+
+# Which type of cuisine has the highest count of "Critical"?
+
+```{r message=FALSE, echo=FALSE}
+rest_inspec %>% 
+  group_by(cuisine_description) %>%
+  summarize(num_critical = sum(critical_flag=="Critical")) %>%
+  plot_ly(x = ~cuisine_description, y = ~num_critical, type = "bar") %>% 
+  layout(xaxis = list(title = "Type of Cuisine"), yaxis = list(title ="Count of critical incidence"))
+```
+
+# NYC restaurants score by different boros
+
+```{r message=FALSE, echo=FALSE}
+rest_inspec %>%
+  group_by(boro) %>%
+  drop_na(score)%>%
+  plot_ly(x = ~boro, y = ~score, type = "box", color = ~boro) %>%
+  layout(xaxis = list(title = "NYC boros"), yaxis = list(title = "Score"))
+```
+
+
+```{r message=FALSE, echo=FALSE}
+rest_inspec %>%
+  group_by(critical_flag) %>%
+  drop_na(score)%>%
+  plot_ly( y = ~score, type = "scatter", color = ~critical_flag) %>%
+  layout(xaxis = list(title = "NYC boros"), yaxis = list(title = "Score"))
+```
+
