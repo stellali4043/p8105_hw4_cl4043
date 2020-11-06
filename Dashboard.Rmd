@@ -17,16 +17,6 @@ library(janitor)
 ```
 
 
-
-### Explanation for heatmap
-
-Among regular instacart users (days since prior order<30 days), is number of days since last order related to size of the order?
-
-One could make a case that within 10 days, those that order after more days tend to order more items, but this small trend may just be driven by many people ordering around 7 days, resulting in a higher frequency of orders containing 5 items in the 7th day than on the 2nd day since ordering simply because there are more people ordering 7 days after their last order. A box plot of the first 10 days on the x axis would be my next investigative step here. I wanted to make a heatmap first because I thought of the variables as continuous. 
-
-
-
-
 # Which type of cuisine has the highest count of "Critical"?
 
 ```{r message=FALSE, echo=FALSE}
