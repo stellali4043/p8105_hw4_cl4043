@@ -26,7 +26,11 @@ rest_inspec %>%
   layout(xaxis = list(title = "Type of Cuisine"), yaxis = list(title ="Count of critical incidence"))
 ```
 
-```{r}
-
+```{r message=FALSE, echo=FALSE}
+data(rest_inspec)
+rest_inspec %>% 
+  group_by(critical_flag) %>%
+  plot_ly(x = ~critical_flag, y = ~score, type = "box") %>% 
+  layout(xaxis = list(title = "critical status"), yaxis = list(title ="score trend"))
 ```
 
