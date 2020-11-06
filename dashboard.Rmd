@@ -6,7 +6,7 @@ output:
     vertical_layout: fill
 ---
 
-```{r setup, message = FALSE}
+```{r setup, message = FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(flexdashboard)
 library(tidyverse)
@@ -17,7 +17,7 @@ library(patchwork)
 
 # Which type of cuisine has the highest count of “Critical”?
 
-```{r}
+```{r message=FALSE, echo=FALSE}
 data(rest_inspec)
 rest_inspec %>% 
   group_by(cuisine_description) %>%
