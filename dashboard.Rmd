@@ -1,0 +1,32 @@
+---
+title: "Dashboard for HW 4"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(patchwork)
+```
+
+# Which type of cuisine has the highest count of “Critical”?
+
+```{r}
+data(rest_inspec)
+rest_inspec %>% 
+  group_by(cuisine_description) %>%
+  summarize(num_cuisine = sum(critical_flag=="Critical")) %>%
+  plot_ly(x = ~cuisine_description, y = ~num_cuisine, type = "bar") %>% 
+  layout(xaxis = list(title = "Type of Cuisine"), yaxis = list(title ="Count of critical incidence"))
+```
+
+```{r}
+
+```
+
